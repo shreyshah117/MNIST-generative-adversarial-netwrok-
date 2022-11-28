@@ -123,4 +123,4 @@ for epoch in range(no_epochs):
                 img = transforms.ToPILImage(mode='L')(test_images[i].squeeze(0).detach().cpu())
                 fig.add_subplot(2, 5, i+1)
                 plt.imshow(img)
-            plt.savefig('gen_images/gen_'+str(epoch)+'_'+str(itr)+'.png')
+            
